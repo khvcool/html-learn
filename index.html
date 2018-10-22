@@ -6,7 +6,9 @@
     <title>Техномарт</title>
 </head>
 <body>
+   <h1 class="visible-hidden">Техномарт</h1>
     <header class="head">
+        <h2 class="visible-hidden">Топ-меню</h2>
         <nav class="top-menu">
             <span class="logo">Техномарт</span>
             <ul class="sub-menu">
@@ -17,6 +19,7 @@
         </nav>
 
         <section class="head-contact">
+           <h2 class="visible-hidden">Header</h2>
             <p class="block-info">
                 Интернет-магазин строительных материалов и инструментов для ремонта
             </p>
@@ -44,8 +47,6 @@
     </header>
 
     <main class="container">
-        <h1 class="visible-hidden">Техномарт</h1>
-
         <section class="blocks">
            <h2 class="visible-hidden">Преимущества</h2>
             <div class="slider"><img src="images/slider-1.jpg" alt=""></div>
@@ -64,24 +65,24 @@
                     <img src="images/snippet-18927-copy-3.png" alt="" class="product-preview">
                     <span class="title">Перфоратор BOSCH BFG 9000</span>
                     <span class="line-through">32500 Р.</span>
-                    <a href="" class="button red-button">25500 Р.</a>
+                    <button class="button red-button">25500 Р.</button>
                 </li>
                 <li>
                     <img src="images/snippet-945-copy-2.jpg" alt="" class="product-preview">
                     <span class="title">Перфоратор BOSCH BFG 3000</span>
                     <span class="line-through">22500 Р.</span>
-                    <a href="" class="button red-button">15500 Р.</a>
+                    <button class="button red-button">15500 Р.</button>
                 </li>
                 <li>
                     <img src="images/snippet-18927-copy-2.jpg" alt="" class="product-preview">
                     <span class="title">Перфоратор BOSCH BFG 6000</span>
                     <span class="line-through">30500 Р.</span>
-                    <a href="" class="button red-button">25500 Р.</a>
+                    <button class="button red-button">25500 Р.</button>
                 </li>
                 <li>
                     <img src="images/snippet-18927-copy-3.png" alt="" class="product-preview">
                     <span class="title">Перфоратор BOSCH BFG 2000</span>
-                    <a href="" class="button red-button">12500 Р.</a>
+                    <button class="button red-button">12500 Р.</button>
                 </li>
             </ul>
         </section>
@@ -106,17 +107,29 @@
             <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             <ul class="services-menu">
-                <li><a href="">Доставка</a></li>
-                <li><a href="">Гарантия</a></li>
-                <li><a href="">Кредит</a></li>
+                <li><a href="#delivery">Доставка</a></li>
+                <li><a href="#guarantee">Гарантия</a></li>
+                <li><a href="#credit">Кредит</a></li>
             </ul>
-            <p>
-                <span class="title">Доставка</span>
-Мы с удовольствием доставим ваш товар прямо
-к вашему подъезду совершенно бесплатно!
-Ведь мы неплохо заработаем,
-поднимая его на ваш этаж!
-            </p>
+            <div class="services-block" id="delivery">
+                <h3>Доставка</h3>
+                Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем,
+                поднимая его на ваш этаж!
+            </div>
+            <div class="services-block" id="guarantee">
+                <h3>Гарантия</h3>
+                Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                Дом уж восстановите как-нибудь сами.
+            </div>
+            <div class="services-block" id="credit">
+                <h3>Кредит</h3>
+                Залезть в долговую яму стало проще!
+                Кредитные консультанты придут вам на помощь.
+                <a href="" class="button">Отправить заявку</a>
+            </div>
         </section>
 
         <section class="about-us">
@@ -147,8 +160,8 @@
         </section>
     </main>
 
-    <footer class="foot">
-       <div class="footer-logo">Техномарт</div>
+    <footer class="footer">
+       <p class="footer-logo">Техномарт</p>
         <ul class="footer-menu">
             <li><a href="">Компания</a></li>
             <li><a href="">Новости</a></li>
@@ -160,11 +173,11 @@
             <li><a href="">Инструмент</a></li>
             <li><a href="">Спеупредложения</a></li>
         </ul>
-        <p>
+        <p class="footer-contacts">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             +7 (812) 555-05-55
         </p>
-        <p>
+        <p class="footer-copyright">
             © 2010–2017 Компания «Техномарт» Все права защищены
         </p>
         <ul>
@@ -172,12 +185,12 @@
             <li><a href=""><img src="images/svg/icon-fb.svg" alt=""></a></li>
             <li><a href=""><img src="images/svg/icon-insta.svg" alt=""></a></li>
         </ul>
-        <p>Обратная связь: mil@mail.ru</p>
-        <p>Разработано - <a href="">Мной</a></p>
+        <p class="footer-reply">Обратная связь: mil@mail.ru</p>
+        <p class="footer-dev">Разработано - <a href="">Мной</a></p>
     </footer>
 
     <section class="contact-popup">
-
+        <h2 class="visible-hidden">Связаться с нами</h2>
     </section>
 </body>
 </html>
